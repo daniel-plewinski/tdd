@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.5/phpunit.xsd" 
+    colors="true"
+    stopOnError="false"
+    verbose="false"
+    >
+    <testsuites>
+        <testsuite name="all">
+            <directory>tests/</directory>                         
+        </testsuite>      
+        <testsuite name="calendar">
+            <directory>tests/calendar</directory>                         
+        </testsuite>
+        <testsuite name="event">
+            <directory>tests/event</directory>                         
+        </testsuite>
+        <testsuite name="user">
+            <directory>tests/user</directory>                         
+        </testsuite>
+    </testsuites>  
+    <php>
+        <var name="username" value="administrator"/>
+        <var name="password" value="Admin123"/>
+    </php> 
+</phpunit>
